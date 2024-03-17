@@ -30,17 +30,17 @@ See UML Class Diagram for reference: https://lucid.app/lucidchart/8d9b8317-76aa-
 - serialNumber: string
 - location: string
 - samplingRate: int
-- /WAVES
+- /WAVES (This is a MQTT Topic NOT an attribute, comment this in code)
     - timestamp: datetime
     - amplitude: float
     - period: float
     - waveDirection: float
     - frequency: float
     - fuel: float
-- /WIND
+- /WIND (This is a MQTT Topic NOT an attribute, comment this in code)
     - windSpeed: float
     - windDirection: float
-- /WATER
+- /WATER (This is a MQTT Topic NOT an attribute, comment this in code)
     - waterTemperature: float
     - waterSalinity: float
 
@@ -75,6 +75,8 @@ See UML Class Diagram for reference: https://lucid.app/lucidchart/8d9b8317-76aa-
     - Closes connection to the broker
 - on_message(client, userdata, msg)
     - To receive messages from broker
+
+- Create 2 Laptop objects with different values.
 
 # **Important Notes**
 
